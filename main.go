@@ -295,7 +295,7 @@ func getTLSConfig() *tls.Config {
 
 	return &tls.Config{
 		PreferServerCipherSuites: true,
-		MinVersion:               tls.VersionTLS12,
+		MinVersion:               tls.VersionTLS11,
 		CipherSuites:             tlsCipherSuites,
 		Certificates:             []tls.Certificate{cert},
 	}
