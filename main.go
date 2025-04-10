@@ -277,6 +277,7 @@ func getTLSConfig() *tls.Config {
 		tls.TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384,
 		tls.TLS_RSA_WITH_AES_128_GCM_SHA256, // does not provide PFS
 		tls.TLS_RSA_WITH_AES_256_GCM_SHA384, // does not provide PFS
+		tls.TLS_RSA_WITH_AES_128_CBC_SHA256, // does not provide PFS
 	}
 
 	if *localCert == "" || *localKey == "" {
